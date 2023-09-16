@@ -102,31 +102,31 @@ On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on mult
 \begin{bmatrix}
 2\\
 7\\
-1\\
+1
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
 8\\
 2\\
-8\\
+8
 \end{bmatrix}
 =
 \begin{bmatrix}
 2 \cdot 8\\
 7 \cdot 2\\
-1 \cdot 8\\
+1 \cdot 8
 \end{bmatrix}
 =
 \begin{bmatrix}
 16\\
 14\\
-8\\
+8
 \end{bmatrix}
-$$
+```
 
 Parfois, on peut se retrouver dans le cas où on veut faire un produit scalaire entre un vecteur ligne et un vecteur colonne.
 
-$$
+```math
 \begin{bmatrix}
 2 & 7 & 1
 \end{bmatrix}
