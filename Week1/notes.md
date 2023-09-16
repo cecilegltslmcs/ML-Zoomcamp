@@ -20,7 +20,7 @@ Les données sont de deux types : les features et la cible (target). Le modèle 
 
 Un système basé sur des règles va s'implémenter en transcrivant des règles en code. Le souci de ce type de système c'est qu'il peut vite devenir complexe. Le processus est itératif car on va y ajouter des règles au fur et à mesure, des retraits de règles, etc.
 
-![Alt text](Illustrations/Example-Expert-system-with-If-then-rules-algorithm.png)
+![Alt text](Illustrations/Expert-system-with-If-then-rules-algorithm.png)
 
 *Exemple d'algorithme d'un système expert.*
 
@@ -47,7 +47,7 @@ Il existe plusieurs types d'apprentissage supervisé :
 
 ## 4) Crisp-DM
 
-![Alt text](illustrations/CRISP-DM_Process_Diagram.png)
+![Alt text](Illustrations/CRISP-DM_Process_Diagram.png)
 
 
 **Ressources:**
@@ -89,7 +89,9 @@ Il est aussi possible de séparer le jeu de données seulement en deux parties :
 ## 7) Introduction à Numpy
 
 [Documentation Numpy](https://numpy.org/)
+
 [Notebook - Intro Numpy](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Numpy.ipynb)
 
 ## 8) Algèbre linéaire (base)
 
+Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du vecteur par 2.
