@@ -3,7 +3,7 @@
 
 [Youtube - 1.1 à 1.10](https://www.youtube.com/watch?v=Crm_5n4mvmg&list=PL3MmuxUbc_hIhxl5Ji8t4O6lPAOpHaCLR&index=2)
 
-[Github](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/01-intro)
+[Github - DataTalksClub](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/01-intro)
 
 
 ## 1) Qu'est-ce que le ML ?
@@ -331,4 +331,4 @@ I = np.eye(4)
 
 [Documentation Pandas](https://pandas.pydata.org/)
 
-[Notebook - Intro Pandas]()
+[Notebook - Intro Pandas](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Pandas.ipynb)
