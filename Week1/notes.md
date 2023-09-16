@@ -98,8 +98,7 @@ Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du v
 
 On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur.
 
-$$
-
+```math
 \begin{bmatrix}
 2\\
 7\\
@@ -137,7 +136,7 @@ $$
 2\\
 8\\
 \end{bmatrix}
-$$
+```
 
 Avant de pouvoir faire le calcul, il va falloir effectuer une opération que l'on appelle une transposée pour avoir la même forme de vecteur. On notera cela de la manière suivante : $u^T\cdot v$.
 
