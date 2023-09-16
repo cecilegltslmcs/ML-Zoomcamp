@@ -3,8 +3,7 @@
 
 [Youtube - 1.1 à 1.10](https://www.youtube.com/watch?v=Crm_5n4mvmg&list=PL3MmuxUbc_hIhxl5Ji8t4O6lPAOpHaCLR&index=2)
 
-[Github](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/01-intro)
-
+[Github - Data Talks Club](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/01-intro)
 
 ## 1) Qu'est-ce que le ML ?
 
@@ -95,3 +94,119 @@ Il est aussi possible de séparer le jeu de données seulement en deux parties :
 ## 8) Algèbre linéaire (base)
 
 Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du vecteur par 2.
+
+### a) Multiplication de vecteur par un vecteur
+
+On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur. 
+$$\begin{bmatrix}
+2\\
+7\\
+1\\
+\end{bmatrix} 
+
+\cdot
+
+\begin{bmatrix}
+8\\
+2\\
+8\\
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+2 \cdot 8\\
+7 \cdot 2\\
+1 \cdot 8\\
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+16\\
+14\\
+8\\
+\end{bmatrix}
+
+$$
+
+Parfois, on peut se retrouver dans le cas où on veut faire un produit scalaire entre un vecteur ligne et un vecteur colonne. 
+
+$$
+\begin{bmatrix}
+2 & 7 & 1
+\end{bmatrix}
+
+\cdot 
+
+\begin{bmatrix}
+8\\
+2\\
+8\\
+\end{bmatrix}
+
+$$
+
+Avant de pouvoir faire le calcul, il va falloir effectuer une opération que l'on appelle une transposée pour avoir la même forme de vecteur. On notera cela de la manière suivante : $u^T\cdot v$.
+
+*Exemple d'implémentation en Python*
+```
+def vector_vector_multiplication(u, v):
+    assert u.shape[0] == v.shape[0]
+    
+    n = u.shape[0]
+    result = 0.0
+    
+    for i in range(n):
+        result = result + u[i] * v[i]
+
+    return result
+```
+
+Dans Numpy, on peut utiliser ```u.dot(v)```.
+
+### b) Multiplication d'une matrice par un vecteur
+
+Pour chaque ligne de la matrice, on effectue sa transposée et on la multiplie par le vecteur. 
+
+$$
+\begin{bmatrix}
+2 & 4 & 5 & 6\\
+1 & 2 & 1 & 2\\
+3 & 1 & 2 & 1\\
+\end{bmatrix}
+
+\cdot
+
+\begin{bmatrix}
+1\\
+0.5\\
+2\\
+1\\
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+(2 \cdot 1) + (4 \cdot 0.5) + (5 \cdot 2) + (6 \cdot 1) \\
+(1 \cdot 1) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1) \\
+(3 \cdot 1) + (1 \cdot 0.5) + (2 \cdot 2) + (1 \cdot 1)
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+2 + 2 + 10 + 6 \\
+1 + 1 + 2 + 2 \\
+3 + 0.5 + 4 + 1\\
+\end{bmatrix}
+
+= 
+
+\begin{bmatrix}
+20 \\
+6 \\
+8.5
+\end{bmatrix}
+
+$$
