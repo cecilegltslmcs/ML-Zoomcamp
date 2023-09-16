@@ -328,3 +328,7 @@ I = np.eye(4)
 ```np.linalg.inv()```
 
 ## 9) Introduction à Pandas
+
+[Documentation Pandas](https://pandas.pydata.org/)
+
+[Notebook - Intro Pandas]()
