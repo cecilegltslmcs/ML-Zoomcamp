@@ -244,40 +244,31 @@ Avec Numpy, on utilisera ```U.dot(v)```.
 ### c) Mulitplication entre matrices
 
 $$
-
 \begin{bmatrix}
 2 & 4 & 5 & 6\\
 1 & 2 & 1 & 2\\
 3 & 1 & 2 & 1\\
 \end{bmatrix}
-
 \cdot
-
 \begin{bmatrix}
 1 & 2 & 1\\
 0 & 0.5 & 1\\
 0 & 2 & 1 \\
 2 & 1 & 0
 \end{bmatrix}
-
 = 
-
 \begin{bmatrix}
 (2 \cdot 1) + (4 \cdot 0) + (5 \cdot 0) + (6 \cdot 2)\\
 (1 \cdot 2) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1)\\
 (3 \cdot 1) + (1 \cdot 1) + (2 \cdot 1) + (1 \cdot 0) 
 \end{bmatrix}
-
 =
-
 \begin{bmatrix}
 2 + 0 + 0 + 12\\
 2 + 1 + 2 + 2\\
 3 + 1 + 2 + 0\\
 \end{bmatrix}
-
 =
-
 \begin{bmatrix}
 14\\
 7\\
