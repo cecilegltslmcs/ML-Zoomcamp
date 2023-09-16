@@ -89,7 +89,7 @@ Il est aussi possible de séparer le jeu de données seulement en deux parties :
 ## 7) Introduction à Numpy
 
 [Documentation Numpy](https://numpy.org/)
-[Notebook - Intro Numpy]()
+[Notebook - Intro Numpy](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Numpy.ipynb)
 
 ## 8) Algèbre linéaire (base)
 
