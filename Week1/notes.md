@@ -134,7 +134,7 @@ Parfois, on peut se retrouver dans le cas où on veut faire un produit scalaire 
 \begin{bmatrix}
 8\\
 2\\
-8\\
+8
 \end{bmatrix}
 ```
 
@@ -161,18 +161,18 @@ Dans Numpy, on peut utiliser ```u.dot(v)```.
 
 Pour chaque ligne de la matrice, on effectue sa transposée et on la multiplie par le vecteur.
 
-$$
+```math
 \begin{bmatrix}
 2 & 4 & 5 & 6\\
 1 & 2 & 1 & 2\\
-3 & 1 & 2 & 1\\
+3 & 1 & 2 & 1
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
 1\\
 0.5\\
 2\\
-1\\
+1
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -184,7 +184,7 @@ $$
 \begin{bmatrix}
 2 + 2 + 10 + 6 \\
 1 + 1 + 2 + 2 \\
-3 + 0.5 + 4 + 1\\
+3 + 0.5 + 4 + 1
 \end{bmatrix}
 = 
 \begin{bmatrix}
@@ -192,7 +192,7 @@ $$
 6 \\
 8.5
 \end{bmatrix}
-$$
+```
 
 *Implémentation en Python*
 
@@ -212,12 +212,12 @@ def matrix_vector_multiplication(U, v):
 Avec Numpy, on utilisera ```U.dot(v)```.
 
 ### c) Mulitplication entre matrices
---
-$$
+
+```math
 \begin{bmatrix}
 2 & 4 & 5 & 6\\
 1 & 2 & 1 & 2\\
-3 & 1 & 2 & 1\\
+3 & 1 & 2 & 1
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
@@ -236,15 +236,15 @@ $$
 \begin{bmatrix}
 2 + 0 + 0 + 12\\
 2 + 1 + 2 + 2\\
-3 + 1 + 2 + 0\\
+3 + 1 + 2 + 0
 \end{bmatrix}
 =
 \begin{bmatrix}
 14\\
 7\\
-6\\
+6
 \end{bmatrix}
-$$
+```
 
 *Implémentation en Python*
 ```
@@ -268,7 +268,7 @@ def matrix_matrix_multiplication(U, V):
 
 Une matrice d'identité ou matrice unité est une matrice carrée diagonale dont la diagonale principale est remplie de 1 1, et dont les autres coefficients valent 0.
 
-$$
+```math
 I = 
 \begin{bmatrix}
 1 & 0 & 0 & 0\\
@@ -276,7 +276,7 @@ I =
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
-$$
+```
 
 *Création en Python*
 ```
