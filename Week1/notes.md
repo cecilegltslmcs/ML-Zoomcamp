@@ -99,6 +99,7 @@ Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du v
 On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur.
 
 $$
+
 \begin{bmatrix}
 2\\
 7\\
@@ -123,7 +124,9 @@ $$
 8\\
 \end{bmatrix}
 $$
+
 Parfois, on peut se retrouver dans le cas où on veut faire un produit scalaire entre un vecteur ligne et un vecteur colonne.
+
 $$
 \begin{bmatrix}
 2 & 7 & 1
