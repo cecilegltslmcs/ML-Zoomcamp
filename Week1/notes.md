@@ -98,7 +98,8 @@ Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du v
 
 On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur.
 
-$$\begin{bmatrix}
+$$
+\begin{bmatrix}
 2\\
 7\\
 1\\
@@ -159,68 +160,35 @@ Dans Numpy, on peut utiliser ```u.dot(v)```.
 Pour chaque ligne de la matrice, on effectue sa transposée et on la multiplie par le vecteur.
 
 $$
-
 \begin{bmatrix}
-
 2 & 4 & 5 & 6\\
-
 1 & 2 & 1 & 2\\
-
 3 & 1 & 2 & 1\\
-
 \end{bmatrix}
-
-  
-
 \cdot
-
-  
-
 \begin{bmatrix}
-
 1\\
-
 0.5\\
-
 2\\
-
 1\\
-
 \end{bmatrix}
-
 =
-
 \begin{bmatrix}
-
 (2 \cdot 1) + (4 \cdot 0.5) + (5 \cdot 2) + (6 \cdot 1) \\
-
 (1 \cdot 1) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1) \\
-
 (3 \cdot 1) + (1 \cdot 0.5) + (2 \cdot 2) + (1 \cdot 1)
-
 \end{bmatrix}
-
 =
-
 \begin{bmatrix}
-
 2 + 2 + 10 + 6 \\
-
 1 + 1 + 2 + 2 \\
-
 3 + 0.5 + 4 + 1\\
-
 \end{bmatrix}
-
 = 
 \begin{bmatrix}
-
 20 \\
-
 6 \\
-
 8.5
-
 \end{bmatrix}
 $$
 
@@ -242,7 +210,7 @@ def matrix_vector_multiplication(U, v):
 Avec Numpy, on utilisera ```U.dot(v)```.
 
 ### c) Mulitplication entre matrices
-
+--
 $$
 \begin{bmatrix}
 2 & 4 & 5 & 6\\
