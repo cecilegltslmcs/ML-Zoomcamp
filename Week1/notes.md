@@ -1,0 +1,95 @@
+
+# Introduction
+
+[Youtube - 1.1 à 1.10](https://www.youtube.com/watch?v=Crm_5n4mvmg&list=PL3MmuxUbc_hIhxl5Ji8t4O6lPAOpHaCLR&index=2)
+
+[Github](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/01-intro)
+
+
+## 1) Qu'est-ce que le ML ?
+
+A partir de données, le modèle transforme et extrait les informations à partir de ces données pour faire des prédictions. Les features sont les informations que l'on a à disposition et la target (ou cible) constitue ce que l'on cherche à prédire.
+
+Un modèle encapsule tout ce qu'il aura appris à partir des features dans les données.
+
+![Alt text](Illustrations/030819_1026_SupervisedM2.webp)
+
+Les données sont de deux types : les features et la cible (target). Le modèle encapsule ces deux objets pour pouvoir en déduire des patterns.
+
+## 2) Machine Learning vs Rule-Based Systems
+
+Un système basé sur des règles va s'implémenter en transcrivant des règles en code. Le souci de ce type de système c'est qu'il peut vite devenir complexe. Le processus est itératif car on va y ajouter des règles au fur et à mesure, des retraits de règles, etc.
+
+![Alt text](Illustrations/Example-Expert-system-with-If-then-rules-algorithm.png)
+
+*Exemple d'algorithme d'un système expert.*
+
+On se retrouve avec quelque chose de difficile maintenable.   On va donc plutôt lui préférer le machine learning.
+Après avoir obtenu des données, on définit et calcule des features puis on entraîne et utilise le modèle obtenu.
+
+**Ressource:**
+- [Difference between AI and Expert Systems](https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/)
+
+## 3) Apprentissage supervisé
+
+On aura des features et une cible. On va chercher à entraîner une fonction qui prend comme paramètres les features pour pouvoir atteindre la cible/prédiction.
+Il existe plusieurs types d'apprentissage supervisé :
+- La régression (*prédiction du prix d'une voiture, d'une maison*)
+- La classification :
+    - Binaire
+    - Multiclasse
+- Le ranking (système de recommandation)
+
+![Alt text](Illustrations/Supervised-learning-classification-techniques.png)
+
+**Ressource:** 
+- [Supervised Learning Algorithms](https://towardsdatascience.com/supervised-learning-algorithms-explanaition-and-simple-code-4fbd1276f8aa)
+
+## 4) Crisp-DM
+
+![Alt text](illustrations/CRISP-DM_Process_Diagram.png)
+
+
+**Ressources:**
+- [Wikipédia: CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
+- [Data Science Process Alliance: CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
+- [CRISP-DM par IBM](https://www.ibm.com/docs/fr/spss-modeler/saas?topic=dm-crisp-help-overview)
+
+## 5) Sélection de modèles
+
+Pour effectuer la sélection du modèle le plus pertinent pour un problème, on va suivre une démarche. 
+
+Tout d'abord, on va diviser les données en trois parts : 
+- Entrainement (60%)
+- Validation (20%)
+- Test (20%)
+
+Après avoir fait les scorings sur le jeu de validation, on va sélectionner un modèle et l'utiliser sur le jeu de test. On va observer les scores obtenus avec ce modèle. Si les scores sur le jeu de test sont proches de ceux du jeu de validation, on va pouvoir dire que notre modèle est le meilleur.
+
+6 étapes :
+- Séparation du jeu de données en trois parties
+- Entrainement des modèles sur le jeu d'entrainement
+- Validation du modèle sur le jeu de validation
+- Sélection du meilleur modèle sur la base des deux étapes différentes
+- Test du modèle sur le jeu de test
+- Vérification du modèle
+
+Il est aussi possible de séparer le jeu de données seulement en deux parties : entraînement et test. Le modèle devrait être meilleur car il va s'entraîner sur plus de données 80% au lieu de 20%. 
+
+**Ressources:**
+- [Model Selection](https://machinelearningmastery.com/a-gentle-introduction-to-model-selection-for-machine-learning/)
+- [Difference between validation & test datasets](https://machinelearningmastery.com/difference-test-validation-datasets/)
+
+- [Training, validation & test datasets : Wikipedia](https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets)
+
+## 6) Installation de l'environnement
+
+[Installation de l'environnement](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/01-intro/06-environment.md)
+
+## 7) Introduction à Numpy
+
+[Documentation Numpy](https://numpy.org/)
+[Notebook - Intro Numpy]()
+
+## 8) Algèbre linéaire (base)
+
