@@ -255,21 +255,15 @@ Avec Numpy, on utilisera ```U.dot(v)```.
 \end{bmatrix}
 = 
 \begin{bmatrix}
-(2 \cdot 1) + (4 \cdot 0) + (5 \cdot 0) + (6 \cdot 2)\\
-(1 \cdot 2) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1)\\
-(3 \cdot 1) + (1 \cdot 1) + (2 \cdot 1) + (1 \cdot 0) 
+(2 \cdot 1) + (4 \cdot 0) + (5 \cdot 0) + (6 \cdot 2) & (2 \cdot 2) + (4 \cdot 0.5) + (5 \cdot 2) + (6 \cdot 1) & (2 \cdot 1) + (4 \cdot 0) + (5 \cdot 1) + (6 \cdot 0)\\
+(1 \cdot 2) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1) & (1 \cdot 2) + (2 \cdot 0.5) + (1 \cdot 2) + (2 \cdot 1) & (1 \cdot 1) + (2 \cdot 0) + (1 \cdot 1) + (2 \cdot 0)   \\
+(3 \cdot 1) + (1 \cdot 1) + (2 \cdot 1) + (1 \cdot 0) &  (3 \cdot 2) + (1 \cdot 0.5) + (2 \cdot 2) + (1 \cdot 1) &  (3 \cdot 1) + (1 \cdot 0) + (2 \cdot 1) + (1 \cdot 0)
 \end{bmatrix}
 =
 \begin{bmatrix}
-2 + 0 + 0 + 12\\
-2 + 1 + 2 + 2\\
-3 + 1 + 2 + 0
-\end{bmatrix}
-=
-\begin{bmatrix}
-14\\
-7\\
-6
+14 & 22 & 7\\
+5 & 7 & 2\\
+3 & 11.5 & 5 
 \end{bmatrix}
 ```
 
