@@ -74,7 +74,7 @@ Cette méthodologie est itérative. On a notamment des aller-retours entre la co
 
 /!\ *En général, la modélisation ne représente que 20% du travail d'un data scientist. La plus grande partie du travail d'un data scientist se trouve dans la compréhension et la préparation des données.*
 
-![Alt text](illustrations/CRISP-DM_Process_Diagram.png)
+![Alt text](Illustrations/CRISP-DM_Process_Diagram.png)
 
 **Ressources:**
 - [Wikipédia - CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
