@@ -8,7 +8,7 @@
 
 ## 1) Qu'est-ce que le ML ?
 
-Le machine learning est un domaine de l'intelligence artificielle. Il consiste en la découverte de patterns dans des données pour pouvoir prédire une valeur-cible. 
+Le machine learning est un domaine de l'intelligence artificielle. Il consiste en la découverte de patterns dans des données pour pouvoir prédire une valeur-cible.
 
 Un modèle va transformer et extraite les informations des données qu'on lui fournit pour faire une prédiction. Les informations que l'on fournit aux modèles sont ce qu'on appelle des **features** et on va chercher à prédire une **cible**. Le modèle consiste en une fonction qui va avoir appris des patterns qu'il a trouvé dans les features.
 
@@ -24,7 +24,7 @@ Un modèle va transformer et extraite les informations des données qu'on lui fo
 **Ressource:**
 - [Définition du Machine Learning](https://datascientest.com/machine-learning-tout-savoir)
 
-## 2) Machine Learning vs Rule-Based Systems
+## 2) Machine Learning vs Systèmes basés sur des règles
 
 Un système expert est capable de prendre des décisions à partir de règles pré-définies. Il est composé de trois parties :
 - une base de faits
@@ -37,8 +37,7 @@ Le moteur d'inférence va être implémenter de manière itératif à partir de 
 
 *Exemple d'algorithme d'un système expert.*
 
-Plus on y ajoute de règles et de faits, plus le système devient complexe et difficilement maintenable. C'est dans ce type de situations que l'on préférera le machine learning. En effet, le machine learning va permettre de 
-Après avoir obtenu des données, on définit et calcule des features puis on entraîne et utilise le modèle obtenu.
+Plus on y ajoute de règles et de faits, plus le système devient complexe et difficilement maintenable. C'est dans ce type de situations que l'on préférera le machine learning. En effet, le machine learning va permettre de généraliser les différentes règles pour obtenir un modèle.
 
 **Ressources:**
 - [Difference between AI and Expert Systems](https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/)
@@ -46,7 +45,7 @@ Après avoir obtenu des données, on définit et calcule des features puis on en
 
 ## 3) Apprentissage supervisé
 
-L'apprentissage supervisé est une sous-catégorie de l'intelligence artificielle. Elle nécessite d'avoir obtenu des *features* et une *cible* pour pouvoir entraîner un modèle. 
+L'apprentissage supervisé est une sous-catégorie de l'intelligence artificielle. Elle nécessite d'avoir obtenu des *features* et une *cible* pour pouvoir entraîner un modèle.
 
 L'entraînement consiste à ajuster les paramètres d'un algorithme pour l'aider à atteindre la cible. On retrouve plusieurs techniques d'apprentissage supervisé : 
 - La régression (*prédiction du prix d'une voiture, d'une maison*)
@@ -62,7 +61,7 @@ L'entraînement consiste à ajuster les paramètres d'un algorithme pour l'aider
 
 ## 4) Crisp-DM
 
-Crisp-DM (CRoss Industry Standard Process for Data Mining) est une méthodologie utilisée pour les projets d'analyses de données. Elle se compose de 6 étapes : 
+Crisp-DM (CRoss Industry Standard Process for Data Mining) est une méthodologie utilisée pour les projets d'analyses de données. Elle se compose de 6 étapes :
 - la compréhension et l'expression d'un besoin business
 - la compréhension des données qui va donner lieu à une phase d'exploration des données.
 - la préparation des données qui découle de la compréhension des données
