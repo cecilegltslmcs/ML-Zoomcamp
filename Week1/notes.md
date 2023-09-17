@@ -291,7 +291,7 @@ def matrix_matrix_multiplication(U, V):
 
 ### d) Matrice d'identité
 
-Une matrice d'identité ou matrice unité est une matrice carrée diagonale dont la diagonale principale est remplie de 1 1, et dont les autres coefficients valent 0.
+Une matrice d'identité ou matrice unité est une matrice carrée diagonale dont la diagonale principale est remplie de 1, et dont les autres coefficients valent 0.
 
 ```math
 I = 
