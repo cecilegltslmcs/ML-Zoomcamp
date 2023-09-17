@@ -321,3 +321,4 @@ I = np.eye(4)
 
 - [Documentation Pandas](https://pandas.pydata.org/)
 - [Notebook - Intro Pandas](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Pandas.ipynb)
+- [Pandas - Cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
