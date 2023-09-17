@@ -14,3 +14,5 @@ On va chercher à créer un outil pour aider les gens à estimer le prix d'une v
 - Réaliser du feature engineering
 - Utiliser la régularisation pour régler des problèmes en lien avec le modèle.
 - Utiliser le modèle.
+
+- [Notebook d'illustration](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week2/car_price_prediction.ipynb)
