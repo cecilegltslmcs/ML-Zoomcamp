@@ -113,6 +113,8 @@ Il est aussi possible de séparer le jeu de données seulement en deux parties :
 
 ## 7) Introduction à Numpy
 
+**NumPy** est une librairy Python qui permet de faire du calcul scientifique. Il apporte une abstraction que l'on appelle *array*. Ces arrays permettent de créer des matrices à N-dimensions.  
+
 - [Documentation Numpy](https://numpy.org/)
 - [Notebook - Intro Numpy]()
 
@@ -314,6 +316,8 @@ I = np.eye(4)
 ```np.linalg.inv()```
 
 ## 9) Introduction à Pandas
+
+**Pandas** est une librairy Python qui permet de manipuler des données sous forme de tableau. 
 
 - [Documentation Pandas](https://pandas.pydata.org/)
 - [Notebook - Intro Pandas](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Pandas.ipynb)
