@@ -8,73 +8,98 @@
 
 ## 1) Qu'est-ce que le ML ?
 
-A partir de données, le modèle transforme et extrait les informations à partir de ces données pour faire des prédictions. Les features sont les informations que l'on a à disposition et la target (ou cible) constitue ce que l'on cherche à prédire.
+Le machine learning est un domaine de l'intelligence artificielle. Il consiste en la découverte de patterns dans des données pour pouvoir prédire une valeur-cible. 
 
-Un modèle encapsule tout ce qu'il aura appris à partir des features dans les données.
+Un modèle va transformer et extraite les informations des données qu'on lui fournit pour faire une prédiction. Les informations que l'on fournit aux modèles sont ce qu'on appelle des **features** et on va chercher à prédire une **cible**. Le modèle consiste en une fonction qui va avoir appris des patterns qu'il a trouvé dans les features.
+
+
+| Exemples de features | Cible |
+|----------------------|-------|
+|Couleur, motorisation, nombre de portes, kilométrages, année de construction | Prix d'une voiture |
+|Nombre de pièces, nombre de chambres, distance du centre-ville/plage, surface, année de construction | Prix d'une maison |
+|Adresse mail expéditeur, objet, contenu du mail | Spam ou non spam |
 
 ![Alt text](Illustrations/030819_1026_SupervisedM2.webp)
 
-Les données sont de deux types : les features et la cible (target). Le modèle encapsule ces deux objets pour pouvoir en déduire des patterns.
+**Ressource:**
+- [Définition du Machine Learning](https://datascientest.com/machine-learning-tout-savoir)
 
 ## 2) Machine Learning vs Rule-Based Systems
 
-Un système basé sur des règles va s'implémenter en transcrivant des règles en code. Le souci de ce type de système c'est qu'il peut vite devenir complexe. Le processus est itératif car on va y ajouter des règles au fur et à mesure, des retraits de règles, etc.
+Un système expert est capable de prendre des décisions à partir de règles pré-définies. Il est composé de trois parties :
+- une base de faits
+- une base de règles
+- un moteur d'inférence
 
-![Alt text](Illustrations/Example-Expert-system-with-If-then-rules-algorithm.png)
+Le moteur d'inférence va être implémenter de manière itératif à partir de la base de faits et de règles. Cela va prendre la forme d'un algorithme à base de *If... Then*.
+
+![Alt text](Illustrations/Expert-system-with-If-then-rules-algorithm.png)
 
 *Exemple d'algorithme d'un système expert.*
 
-On se retrouve avec quelque chose de difficile maintenable.   On va donc plutôt lui préférer le machine learning.
+Plus on y ajoute de règles et de faits, plus le système devient complexe et difficilement maintenable. C'est dans ce type de situations que l'on préférera le machine learning. En effet, le machine learning va permettre de 
 Après avoir obtenu des données, on définit et calcule des features puis on entraîne et utilise le modèle obtenu.
 
-**Ressource:**
+**Ressources:**
 - [Difference between AI and Expert Systems](https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/)
+- [Machine Learning vs Expert Systems | Why it's better?](https://www.parascript.com/blog/machine-learning-ai-vs-expert-systems-ai/)
 
 ## 3) Apprentissage supervisé
 
-On aura des features et une cible. On va chercher à entraîner une fonction qui prend comme paramètres les features pour pouvoir atteindre la cible/prédiction.
-Il existe plusieurs types d'apprentissage supervisé :
+L'apprentissage supervisé est une sous-catégorie de l'intelligence artificielle. Elle nécessite d'avoir obtenu des *features* et une *cible* pour pouvoir entraîner un modèle. 
+
+L'entraînement consiste à ajuster les paramètres d'un algorithme pour l'aider à atteindre la cible. On retrouve plusieurs techniques d'apprentissage supervisé : 
 - La régression (*prédiction du prix d'une voiture, d'une maison*)
-- La classification :
-    - Binaire
-    - Multiclasse
-- Le ranking (système de recommandation)
+- La classification (*binaire vs multiclasse*)
+- Le ranking (*système de recommandation*)
 
-![Alt text](Illustrations/Supervised-learning-classification-techniques.png)
+![Alt text](Illustrations/Types_ML.png)
 
-**Ressource:** 
+**Ressources:** 
 - [Supervised Learning Algorithms](https://towardsdatascience.com/supervised-learning-algorithms-explanaition-and-simple-code-4fbd1276f8aa)
+- [Qu'est-ce que l'apprentissage supervisé ?](https://www.ibm.com/fr-fr/topics/supervised-learning)
+
 
 ## 4) Crisp-DM
 
+Crisp-DM (CRoss Industry Standard Process for Data Mining) est une méthodologie utilisée pour les projets d'analyses de données. Elle se compose de 6 étapes : 
+- la compréhension et l'expression d'un besoin business
+- la compréhension des données qui va donner lieu à une phase d'exploration des données.
+- la préparation des données qui découle de la compréhension des données
+- la modélisation 
+- l'évaluation du modèle
+- le déploiement du modèle.
+
+Cette méthodologie est itérative. On a notamment des aller-retours entre la compréhension du problème business et la compréhension des données et la préparation des données et la modélisation. L'évaluation du modèle demande aussi des retours sur l'étape de compréhension du problème métier pour être sûr que le modèle soit exploitable par les gens en ayant besoin.
+
+/!\ *En général, la modélisation ne représente que 20% du travail d'un data scientist. La plus grande partie du travail d'un data scientist se trouve dans la compréhension et la préparation des données.*
+
 ![Alt text](illustrations/CRISP-DM_Process_Diagram.png)
 
-
 **Ressources:**
-- [Wikipédia: CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
-- [Data Science Process Alliance: CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
-- [CRISP-DM par IBM](https://www.ibm.com/docs/fr/spss-modeler/saas?topic=dm-crisp-help-overview)
+- [Wikipédia - CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
+- [Data Science Process Alliance - CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
+- [CRISP-DM - IBM](https://www.ibm.com/docs/fr/spss-modeler/saas?topic=dm-crisp-help-overview)
 
 ## 5) Sélection de modèles
 
-Pour effectuer la sélection du modèle le plus pertinent pour un problème, on va suivre une démarche. 
+Pour effectuer la sélection du modèle le plus pertinent pour un problème, on va aussi suivre une démarche. Cela permet d'avoir quelque chose de robuste et de reproductible.
 
-Tout d'abord, on va diviser les données en trois parts : 
+Tout d'abord, on va diviser les données en trois parts :
 - Entrainement (60%)
 - Validation (20%)
 - Test (20%)
 
-Après avoir fait les scorings sur le jeu de validation, on va sélectionner un modèle et l'utiliser sur le jeu de test. On va observer les scores obtenus avec ce modèle. Si les scores sur le jeu de test sont proches de ceux du jeu de validation, on va pouvoir dire que notre modèle est le meilleur.
+Après avoir fait les scores sur le jeu de validation, on va sélectionner un modèle et l'utiliser sur le jeu de test. On va observer les scores obtenus avec ce modèle. Si les scores sur le jeu de test sont proches de ceux du jeu de validation, on va pouvoir dire que notre modèle est le meilleur et qu'il ne souffre pas de phénomènes comme le **surapprentissage** (*overfitting*).
 
-6 étapes :
-- Séparation du jeu de données en trois parties
-- Entrainement des modèles sur le jeu d'entrainement
-- Validation du modèle sur le jeu de validation
-- Sélection du meilleur modèle sur la base des deux étapes différentes
-- Test du modèle sur le jeu de test
-- Vérification du modèle
+1) Séparation du jeu de données en trois parties
+2) Entrainement des modèles sur le jeu d'entrainement
+3) Validation du modèle sur le jeu de validation
+4) Sélection du meilleur modèle sur la base des deux étapes différentes
+5) Test du modèle sur le jeu de test
+6) Vérification du modèle
 
-Il est aussi possible de séparer le jeu de données seulement en deux parties : entraînement et test. Le modèle devrait être meilleur car il va s'entraîner sur plus de données 80% au lieu de 20%. 
+Il est aussi possible de séparer le jeu de données seulement en deux parties : **entraînement** et **test**. Le modèle devrait être meilleur car il va s'entraîner sur plus de données 80% au lieu de 20%.
 
 **Ressources:**
 - [Model Selection](https://machinelearningmastery.com/a-gentle-introduction-to-model-selection-for-machine-learning/)
@@ -88,15 +113,15 @@ Il est aussi possible de séparer le jeu de données seulement en deux parties :
 
 ## 7) Introduction à Numpy
 
-[Documentation Numpy](https://numpy.org/)
-[Notebook - Intro Numpy]()
+- [Documentation Numpy](https://numpy.org/)
+- [Notebook - Intro Numpy]()
 
 ## 8) Algèbre linéaire (base)
 
 Si on cherche à multiplier un vecteur par 2, on multiplie chaque élément du vecteur par 2.
 ### a) Multiplication de vecteur par un vecteur
 
-On appelle aussi cela une produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur.
+On appelle aussi cela un produit scalaire (*dot product*). Dans ce cas, on multiplie chaque élément d'un vecteur par les éléments de même indice dans un autre vecteur.
 
 ```math
 \begin{bmatrix}
@@ -290,6 +315,5 @@ I = np.eye(4)
 
 ## 9) Introduction à Pandas
 
-[Documentation Pandas](https://pandas.pydata.org/)
-
-[Notebook - Intro Pandas](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Pandas.ipynb)
+- [Documentation Pandas](https://pandas.pydata.org/)
+- [Notebook - Intro Pandas](https://github.com/cecilegltslmcs/ML-Zoomcamp/blob/main/Week1/Intro%20Pandas.ipynb)
