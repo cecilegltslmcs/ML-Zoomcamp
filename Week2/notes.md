@@ -49,7 +49,7 @@ def linear_regression(xi):
 
 ## 3) Généralisation à une forme vectorielle
 
-Si on reprend cette formule : $ g(x_i) = w_0 + \sum\limits_{j = 1}^n (w_j \cdot x_{ij}) $. La partie après la somme est un produit scalaire. On peut donc réécrire la formule de cette manière $g(x_i) = w_0 + x_i^T \cdot w_j$. L'implémentation en Python de cette formule est la suivante : 
+Si on reprend cette formule : $g(x_i) = w_0 + \sum\limits_{j = 1}^n (w_j \cdot x_{ij})$. La partie après la somme est un produit scalaire. On peut donc réécrire la formule de cette manière $g(x_i) = w_0 + x_i^T \cdot w_j$. L'implémentation en Python de cette formule est la suivante : 
 
 ```
 def dot(xi, w):
