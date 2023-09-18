@@ -89,7 +89,7 @@ X =
 \begin{bmatrix}
 1 & X_{11} & X_{22} & ... & X_{1n}\\
 1 & X_{21} & X_{22} & ... & X_{2n}\\
-1 & ...\\
+1 & & ...& \\
 1 & X_{m1} & X_{m2} & ... & X_{mn}
 \end{bmatrix}
 
@@ -107,7 +107,7 @@ w_n
 \begin{bmatrix}
 X_1^T \cdot w\\
 X_2^T \cdot w\\
-...
+...\\
 X_m^T \cdot w
 \end{bmatrix}
 
