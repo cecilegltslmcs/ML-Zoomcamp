@@ -26,7 +26,7 @@ On cherchera à avoir une fonction qui prendra $x_{i1}, x_{i2},..., x_{in}$ pour
 
 Par exemple :
 
-On part du principe que l'on n'a besoin que de trois caractéristiques d'une voiture pour estimer son prix : la puissance, la consommation en ville et sa popularité. On représentera ces informations sous cette forme :  $x_i = [453, 11, 86]$. Pour ce cas précis, on aura une régression linéaire sous cette forme :  ```math g(x_{i}) = w_0 + w_1 \times x_{i1} + w_2 \times x_{i2} + w_3 \times x_{i3}``` avec :
+On part du principe que l'on n'a besoin que de trois caractéristiques d'une voiture pour estimer son prix : la puissance, la consommation en ville et sa popularité. On représentera ces informations sous cette forme :  $x_i = [453, 11, 86]$. Pour ce cas précis, on aura une régression linéaire sous cette forme : $g(x_{i}) = w_0 + w_1 \times x_{i1} + w_2 \times x_{i2} + w_3 \times x_{i3}$ avec :
 - $w_0$ l'intercept, c'est-à-dire la valeur de y quand X est égale à 0.
 - $w_1, w_2$ et $w_3$ : les poids (ou coefficients associés à des valeurs $x_i$)
 - $x_{i1}, x_{i2}$ et $x_{i3}$ : les valeurs des caractéristiques de la voiture (puissance, consommation en ville et popularité).
