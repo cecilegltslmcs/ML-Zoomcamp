@@ -1,6 +1,11 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-url = 'http://localhost:9696/predict'
+load_dotenv()
+
+host = os.getenv("url_eba")
+url = f'http://{host}/predict'
 
 customer = {
   "customerid": "8879-zkjof",
@@ -24,10 +29,12 @@ customer = {
   "monthlycharges": 79.85,
   "totalcharges": 3320.75
 }
-response = requests.post(url, 
-                         json=customer)
+response = requests.post(url, json=customer)
 response.raise_for_status()
-print(response.json())
+data= response.json()
+print(data)
 
-if response['churn'] == True:
+if data['churn'] == True:
     print(f"sending promo email to {customer['customerid']}")
+else:
+  print(f"Not sending promo email to {customer['customerid']}")
