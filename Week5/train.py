@@ -88,5 +88,5 @@ auc = roc_auc_score(y_test, y_pred)
 
 # saving model
 output_file = f'Week5/model_C={C}.bin'
-with open(output_file, 'wb') as f_out: 
+with open(output_file, 'wb') as f_out:
     pickle.dump((dv, model), f_out)
