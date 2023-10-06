@@ -9,6 +9,10 @@ pipenv shell
 pipenv run waitress-serve --listen=*:9696 predict:app
 pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
 
+# run app with fastAPI & uvicorn
+pipenv run uvicorn api:app --reload
+uvicorn api:app --reload
+
 
 # build a docker image from dockerfile
 docker build -t zoomcamp-test .

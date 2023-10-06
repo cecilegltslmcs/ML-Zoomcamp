@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 host = os.getenv("url_eba")
-url = f'http://{host}/predict'
+url = f'http://127.0.0.1:8000/predict'
 
 customer = {
   "customerid": "8879-zkjof",
@@ -13,18 +13,18 @@ customer = {
   "seniorcitizen": 0,
   "partner": "no",
   "dependents": "no",
-  "tenure": 41,
+  "tenure": 2,
   "phoneservice": "yes",
   "multiplelines": "no",
   "internetservice": "dsl",
   "onlinesecurity": "yes",
-  "onlinebackup": "no",
+  "onlinebackup": "yes",
   "deviceprotection": "yes",
   "techsupport": "yes",
   "streamingtv": "yes",
   "streamingmovies": "yes",
   "contract": "one_year",
-  "paperlessbilling": "yes",
+  "paperlessbilling": "no",
   "paymentmethod": "bank_transfer_(automatic)",
   "monthlycharges": 79.85,
   "totalcharges": 3320.75
