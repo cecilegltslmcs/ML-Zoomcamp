@@ -12,6 +12,7 @@ gunicorn = "*"
 python-dotenv = "*"
 fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
+streamlit = "*"
 
 [dev-packages]
 awsebcli = "*"

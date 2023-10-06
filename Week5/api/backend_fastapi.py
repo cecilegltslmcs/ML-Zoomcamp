@@ -8,7 +8,7 @@ def home():
     return "Welcome to the Churn prediction app"
 
 def load_model():
-    input_file = "model_C=1.0.bin"
+    input_file = "../models/model_C=1.0.bin"
     with open(input_file, 'rb') as f_in: 
         dv, model = pickle.load(f_in)
     return dv, model
