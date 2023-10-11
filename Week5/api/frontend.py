@@ -5,7 +5,6 @@ import json
 st.title("Churn Prediction Application")
 c1, c2 = st.columns(2)
 
-
 with c1.form("Enter the informations for your customer"):
     customer_id = st.text_input("Customer Id")
     gender = st.radio("Select gender:", ["Female", "Male"])
