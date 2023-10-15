@@ -2,9 +2,11 @@ import streamlit as st
 import requests
 import json
 
+# title of the app
 st.title("Churn Prediction Application")
 c1, c2 = st.columns(2)
 
+# form of the app
 with c1.form("Enter the informations for your customer"):
     customer_id = st.text_input("Customer Id")
     gender = st.radio("Select gender:", ["Female", "Male"])
@@ -29,9 +31,11 @@ with c1.form("Enter the informations for your customer"):
     
     submitted = st.form_submit_button("Submit")
 
+# preparation of the data 
 contract = contract.replace(" ", "_").lower()
 payment_method = payment_method.replace(" ", "_").lower()
 
+# creation of a dict with the data from the form
 customer = {
     "customerid": customer_id,
     "gender": gender.lower(),
@@ -55,6 +59,7 @@ customer = {
     "totalcharges": float(total_charges)
 }
 
+# contact endpoint after hitting 'submit' button
 if submitted:
     json_customer = json.dumps(customer, indent=4)
     headers = {"Content-Type": "application/json"}
@@ -63,6 +68,7 @@ if submitted:
                         headers = headers)
     result = req.json()
 
+    # display the result
     if result['churn'] == True:
         c2.subheader(f"Customer :red[{customer['customerid']}] will churn. Send an email!")
     else:
