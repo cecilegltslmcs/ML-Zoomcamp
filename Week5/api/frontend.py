@@ -63,7 +63,7 @@ customer = {
 if submitted:
     json_customer = json.dumps(customer, indent=4)
     headers = {"Content-Type": "application/json"}
-    req = requests.post("http://backend:8000/predict",
+    req = requests.post("http://backend:9696/predict",
                         data=json_customer,
                         headers = headers)
     result = req.json()

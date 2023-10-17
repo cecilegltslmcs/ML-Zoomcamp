@@ -3,11 +3,16 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 
-input_file = "../models/model_C=1.0.bin"
+
+input_file = "model_C=1.0.bin"
 with open(input_file, 'rb') as f_in: 
     dv, model = pickle.load(f_in)
-    
+
 app = Flask('churn')
+
+@app.route('/', methods=["GET"])
+def home():
+    return "Welcome to the churn prediction app!"
 
 @app.route('/predict', methods=['POST'])
 def predict():
