@@ -27,7 +27,7 @@ docker builder prune
 eb init -p "Docker running on 64bit Amazon Linux 2" -r eu-west-3 churn-serving
 
 # test locally
-eb local -port 9696 run
+eb local run --port 9696
 
 # create on the cloud
 eb create churn-serving-env
