@@ -1,4 +1,5 @@
 clothing-model.h5
 myenv/
 pants.jpg
-__pycache__
+__pycache__$
+ecr_uri
