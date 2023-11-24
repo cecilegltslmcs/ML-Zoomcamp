@@ -1,5 +1,6 @@
 import tflite_runtime.interpreter as tflite
 
+import os
 import numpy as np
 
 from io import BytesIO
@@ -7,7 +8,8 @@ from urllib import request
 
 from PIL import Image
 
-input_size = (150, 150)
+MODEL_NAME = os.getenv('MODEL_NAME', 'bees-wasps-v2.tflite')
+input_size = (150,150)
 
 def download_image(url):
     with request.urlopen(url) as resp:
@@ -26,6 +28,9 @@ def prepare_image(img, target_size):
 
 def prepare_input(x):
     return x / 255.0
+
+
+interpreter = tflite.Interpreter(model_path=MODEL_NAME)
 
 
 interpreter = tflite.Interpreter(model_path="bees-wasps-v2.tflite")
