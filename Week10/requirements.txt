@@ -1,4 +1,4 @@
-grcpio
+grpcio
 flask
 gunicorn
 keras-image-helper
