@@ -1,6 +1,9 @@
 import tflite_runtime.interpreter as tflite
 
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 918ca45 (homework week9)
 import numpy as np
 
 from io import BytesIO
@@ -8,8 +11,12 @@ from urllib import request
 
 from PIL import Image
 
+<<<<<<< HEAD
 MODEL_NAME = os.getenv('MODEL_NAME', 'bees-wasps-v2.tflite')
 input_size = (150,150)
+=======
+input_size = (150, 150)
+>>>>>>> 918ca45 (homework week9)
 
 def download_image(url):
     with request.urlopen(url) as resp:
@@ -30,9 +37,12 @@ def prepare_input(x):
     return x / 255.0
 
 
+<<<<<<< HEAD
 interpreter = tflite.Interpreter(model_path=MODEL_NAME)
 
 
+=======
+>>>>>>> 918ca45 (homework week9)
 interpreter = tflite.Interpreter(model_path="bees-wasps-v2.tflite")
 interpreter.allocate_tensors()
 
@@ -59,4 +69,8 @@ def lambda_handler(event, context):
         "prediction": pred
     }
     
+<<<<<<< HEAD
     return result
+=======
+    return result
+>>>>>>> 918ca45 (homework week9)
