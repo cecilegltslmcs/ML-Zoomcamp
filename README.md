@@ -9,3 +9,4 @@
 - Week 7: [Midterm Project](https://github.com/cecilegltslmcs/car_co2_emission)
 - Week 8: [Neural Network and Deep Learning](https://github.com/cecilegltslmcs/clothes-classification)
 - Week 9: [Serveless Deep Learning](https://github.com/cecilegltslmcs/ML-Zoomcamp/tree/main/Week9)
+- Week 10 : [Kubernetes and Tensorflow Serving]()
