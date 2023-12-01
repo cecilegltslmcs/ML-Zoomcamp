@@ -17,4 +17,6 @@ docker build -t zoomcamp-10-gateway:002 \
 
 docker run -it --rm \
     -p 9696:9696 \
-    zoomcamp-10-gateway:001
+    zoomcamp-10-gateway:002
+
+kubectl exec -it ping-deployment-86846df558-rzpbj -- bash
