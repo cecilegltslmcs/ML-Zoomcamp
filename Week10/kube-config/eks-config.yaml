@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: ml-zoomcamp-eks
+  region: eu-west-3
+
+nodeGroups:
+  - name: ng-mx5-xlarge
+    instanceType: m5.xlarge
+    desiredCapacity: 1

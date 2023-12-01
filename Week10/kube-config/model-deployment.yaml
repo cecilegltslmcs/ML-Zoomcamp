@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tf-serving-clothing-model
-        image: zoomcamp-10-model:xception-v4-001
+        image: 223250063886.dkr.ecr.eu-west-3.amazonaws.com/mlzoomcamp-images:zoomcamp-10-gateway-002
         resources:
           limits:
             memory: "1024Mi"
